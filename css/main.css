@@ -85,7 +85,7 @@ body::-webkit-scrollbar-corner {
   .container {
     width: 1370px;
   }
-}
+} 
 
 video {
   max-width: 100%;
@@ -298,7 +298,7 @@ header .toggle_menu span {
 
 footer {
   background-color: lightblue;
-  background-image: url("../../images/subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 3.125rem;
@@ -344,7 +344,7 @@ footer a:hover {
 /* --------------- Start Slider Section -----------------*/
 .slider {
   background: lightblue;
-  background-image: url("../../images/landing.jpg");
+  background-image: url("../images/landing.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -472,7 +472,7 @@ footer a:hover {
 /* --------------- Start Desgin Section ----------------*/
 .design {
   background-color: lightblue;
-  background-image: url("../../images/design-features.jpg");
+  background-image: url("../images/design-features.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -655,7 +655,7 @@ footer a:hover {
 }
 .about .stats {
   background-color: lightblue;
-  background-image: url("../../images/stats.png");
+  background-image: url("../images/stats.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -824,7 +824,7 @@ footer a:hover {
 /* ----------------- Start Quote Section ---------------*/
 .quote {
   background-color: lightblue;
-  background-image: url("../../images/quote.jpg");
+  background-image: url("../images/quote.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -950,7 +950,7 @@ footer a:hover {
 /* --------------- Start Subscribe section -------------*/
 .subscribe {
   background-color: lightblue;
-  background-image: url("../../images/subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 6.25rem;
