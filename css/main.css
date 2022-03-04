@@ -256,6 +256,7 @@ header .nav_items a {
 }
 @media (min-width: 768px) {
   header .nav_items a {
+    min-width: 80px;
     padding: 37px 10px;
     position: relative;
     z-index: 2;
@@ -329,7 +330,6 @@ footer h2 {
 }
 footer p {
   text-transform: capitalize;
-  padding: 15px;
 }
 footer p span {
   font-weight: bold;
@@ -361,6 +361,7 @@ footer a:hover {
   transform: translateY(-50%);
   padding: 25px;
   color: #fff;
+  border-radius: 5px;
   background-color: #107590f0;
 }
 @media (min-width: 768px) {
