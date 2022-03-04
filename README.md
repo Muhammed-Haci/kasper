@@ -1,2 +1,2 @@
-# kasper
-Template two, Kasper
+# Leon
+Template one, Lean.
