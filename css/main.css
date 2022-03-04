@@ -663,6 +663,16 @@ footer a:hover {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem;
 }
+.about .img-holder {
+  text-align: center;
+  position: relative;
+  bottom: -45px;
+}
+@media (min-width: 768px) {
+  .about .img-holder {
+    bottom: -95px;
+  }
+}
 .about .stats {
   background-color: lightblue;
   background-image: url("../imgs/stats.png");
@@ -676,8 +686,9 @@ footer a:hover {
   row-gap: 6.25rem;
   position: relative;
   z-index: 2;
+  border-radius: 5px;
   padding: 3.125rem;
-  background-color: #107590f0;
+  background-color: #107590ab;
 }
 @media (min-width: 992px) {
   .about .stats .content {
@@ -933,7 +944,16 @@ footer a:hover {
   text-transform: capitalize;
   margin: 30px auto 0;
   padding: 15px 20px;
-  border: 1px solid #19c8fa;
+  border: 1px solid;
+  color: #19c8fa;
+  transition: 0.5s;
+  background-color: white;
+  border-radius: 5px;
+}
+.pricing .offers .offer a:hover {
+  font-weight: bold;
+  color: white;
+  background-color: #19c8fa;
 }
 .pricing .text {
   display: flex;
