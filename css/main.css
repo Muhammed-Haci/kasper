@@ -237,6 +237,7 @@ header .nav_items a {
   display: block;
   font-size: 14px;
   padding: 3px 0;
+  padding: 5px 0;
   color: #fff;
   transition: 0.5s;
 }
