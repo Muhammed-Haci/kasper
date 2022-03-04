@@ -330,6 +330,7 @@ footer h2 {
 }
 footer p {
   text-transform: capitalize;
+  margin-top: 10px;
 }
 footer p span {
   font-weight: bold;
