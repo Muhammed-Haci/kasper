@@ -137,7 +137,13 @@ a:active {
 }
 
 /* ---------- End Typography Rules -------------*/
-.slider .overlay, .design::after, .video::after, .about .stats::after, .quote::after, .subscribe::after, footer::after {
+.slider .overlay,
+.design::after,
+.video::after,
+.about .stats::after,
+.quote::after,
+.subscribe::after,
+footer::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -147,17 +153,29 @@ a:active {
   background-color: #0000009a;
 }
 
-.services .section_header, .portfolio .section_header, .about .section_header, .pricing .section_header, .contact .section_header {
+.services .section_header,
+.portfolio .section_header,
+.about .section_header,
+.pricing .section_header,
+.contact .section_header {
   text-align: center;
 }
-.services .section_header h2, .portfolio .section_header h2, .about .section_header h2, .pricing .section_header h2, .contact .section_header h2 {
+.services .section_header h2,
+.portfolio .section_header h2,
+.about .section_header h2,
+.pricing .section_header h2,
+.contact .section_header h2 {
   position: relative;
   font-weight: normal;
   font-size: 2.5rem;
   margin-bottom: 3.125rem;
   text-transform: uppercase;
 }
-.services .section_header h2::before, .portfolio .section_header h2::before, .about .section_header h2::before, .pricing .section_header h2::before, .contact .section_header h2::before {
+.services .section_header h2::before,
+.portfolio .section_header h2::before,
+.about .section_header h2::before,
+.pricing .section_header h2::before,
+.contact .section_header h2::before {
   content: "";
   position: absolute;
   width: 7.5rem;
@@ -167,7 +185,11 @@ a:active {
   transform: translateX(-50%);
   background-color: #333;
 }
-.services .section_header h2::after, .portfolio .section_header h2::after, .about .section_header h2::after, .pricing .section_header h2::after, .contact .section_header h2::after {
+.services .section_header h2::after,
+.portfolio .section_header h2::after,
+.about .section_header h2::after,
+.pricing .section_header h2::after,
+.contact .section_header h2::after {
   content: "";
   position: absolute;
   bottom: -2.375rem;
@@ -179,7 +201,11 @@ a:active {
   background-color: #fff;
   border: 2px solid #333;
 }
-.services .section_header p, .portfolio .section_header p, .about .section_header p, .pricing .section_header p, .contact .section_header p {
+.services .section_header p,
+.portfolio .section_header p,
+.about .section_header p,
+.pricing .section_header p,
+.contact .section_header p {
   line-height: 2;
   margin: 0 auto 4.6875rem auto;
   color: #777;
@@ -216,7 +242,7 @@ header nav {
   align-items: center;
   justify-content: center;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 header .nav_items {
   display: none;
@@ -248,7 +274,8 @@ header .nav_items a {
     border-bottom: 2px solid #000;
     background-color: #107590f0;
   }
-  header .nav_items a:hover, header .nav_items a.active {
+  header .nav_items a:hover,
+  header .nav_items a.active {
     font-weight: bold;
     color: #19c8fa;
     background-color: #000000d6;
@@ -261,7 +288,8 @@ header .nav_items a {
     position: relative;
     z-index: 2;
   }
-  header .nav_items a:hover, header .nav_items a.active {
+  header .nav_items a:hover,
+  header .nav_items a.active {
     font-weight: bold;
     color: #19c8fa;
     border-bottom: 1px solid #19c8fa;
@@ -304,7 +332,7 @@ header .toggle_menu span {
 
 footer {
   background-color: lightblue;
-  background-image: url("../../images/subscribe.jpg");
+  background-image: url("../imgs/subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 3.125rem;
@@ -450,7 +478,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
   }
 }
 .services .our_services .srv_box {
@@ -460,7 +488,7 @@ footer a:hover {
   .services .our_services .srv_box {
     display: flex;
     -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
   }
 }
 .services .our_services i {
@@ -552,7 +580,8 @@ footer a:hover {
   text-transform: capitalize;
   transition: 0.5s;
 }
-.portfolio ul li:hover, .portfolio ul li.active {
+.portfolio ul li:hover,
+.portfolio ul li.active {
   color: #fff;
   background-color: #19c8fa;
 }
@@ -725,7 +754,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 100px;
-         column-gap: 100px;
+    column-gap: 100px;
   }
 }
 .info .container .section_header h3 {
@@ -793,7 +822,8 @@ footer a:hover {
   border-radius: 50%;
   transition: 0.5s;
 }
-.info .container .testimonials ul li:hover, .info .container .testimonials ul li.active {
+.info .container .testimonials ul li:hover,
+.info .container .testimonials ul li.active {
   border-color: #19c8fa;
   background-color: #19c8fa;
 }
@@ -885,7 +915,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -977,7 +1007,7 @@ footer a:hover {
   background-color: #0083fd;
 }
 
-/* ----------------- End Pricing Section ---------------*/
+/* ----------------- End Pricing Section ---------------*/ 
 /* --------------- Start Subscribe section -------------*/
 .subscribe {
   background-color: lightblue;
@@ -1001,7 +1031,7 @@ footer a:hover {
     flex-direction: row;
     align-items: start;
     -moz-column-gap: 50px;
-         column-gap: 50px;
+    column-gap: 50px;
   }
 }
 .subscribe form {
@@ -1023,7 +1053,7 @@ footer a:hover {
   transform: translateY(-50%);
   left: 10px;
 }
-.subscribe form input[type=email] {
+.subscribe form input[type="email"] {
   height: 100%;
   width: calc(100% - 105px);
   padding: 15px 15px 20px 40px;
@@ -1032,19 +1062,19 @@ footer a:hover {
   color: white;
   background-color: transparent;
 }
-.subscribe form input[type=email]::-moz-placeholder {
+.subscribe form input[type="email"]::-moz-placeholder {
   color: #ccc;
 }
-.subscribe form input[type=email]:-ms-input-placeholder {
+.subscribe form input[type="email"]:-ms-input-placeholder {
   color: #ccc;
 }
-.subscribe form input[type=email]::placeholder {
+.subscribe form input[type="email"]::placeholder {
   color: #ccc;
 }
-.subscribe form input[type=email]:focus {
+.subscribe form input[type="email"]:focus {
   outline: none;
 }
-.subscribe form input[type=submit] {
+.subscribe form input[type="submit"] {
   max-height: 100%;
   width: 100px;
   padding: 20px;
@@ -1054,7 +1084,7 @@ footer a:hover {
   color: white;
   background-color: #19c8fa;
 }
-.subscribe form input[type=submit]:hover {
+.subscribe form input[type="submit"]:hover {
   background-color: #0083fd;
 }
 .subscribe p {
