@@ -286,7 +286,6 @@ header .search_form i:hover {
 }
 header .toggle_menu {
   width: 20px;
-  margin-right: 20px;
   cursor: pointer;
 }
 @media (min-width: 768px) {
