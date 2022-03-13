@@ -22,6 +22,7 @@ Project's sections' Table:
 >> header section
 1- the ':after' Element is not 100% currect!
 2- the logo image is not taking the logo div height!
+3- the toggle menu is not in the currect position!
 
 >> Services
 1- why ...
@@ -137,13 +138,7 @@ a:active {
 }
 
 /* ---------- End Typography Rules -------------*/
-.slider .overlay,
-.design::after,
-.video::after,
-.about .stats::after,
-.quote::after,
-.subscribe::after,
-footer::after {
+.slider .overlay, .design::after, .video::after, .about .stats::after, .quote::after, .subscribe::after, footer::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -153,29 +148,17 @@ footer::after {
   background-color: #0000009a;
 }
 
-.services .section_header,
-.portfolio .section_header,
-.about .section_header,
-.pricing .section_header,
-.contact .section_header {
+.services .section_header, .portfolio .section_header, .about .section_header, .pricing .section_header, .contact .section_header {
   text-align: center;
 }
-.services .section_header h2,
-.portfolio .section_header h2,
-.about .section_header h2,
-.pricing .section_header h2,
-.contact .section_header h2 {
+.services .section_header h2, .portfolio .section_header h2, .about .section_header h2, .pricing .section_header h2, .contact .section_header h2 {
   position: relative;
   font-weight: normal;
   font-size: 2.5rem;
   margin-bottom: 3.125rem;
   text-transform: uppercase;
 }
-.services .section_header h2::before,
-.portfolio .section_header h2::before,
-.about .section_header h2::before,
-.pricing .section_header h2::before,
-.contact .section_header h2::before {
+.services .section_header h2::before, .portfolio .section_header h2::before, .about .section_header h2::before, .pricing .section_header h2::before, .contact .section_header h2::before {
   content: "";
   position: absolute;
   width: 7.5rem;
@@ -185,11 +168,7 @@ footer::after {
   transform: translateX(-50%);
   background-color: #333;
 }
-.services .section_header h2::after,
-.portfolio .section_header h2::after,
-.about .section_header h2::after,
-.pricing .section_header h2::after,
-.contact .section_header h2::after {
+.services .section_header h2::after, .portfolio .section_header h2::after, .about .section_header h2::after, .pricing .section_header h2::after, .contact .section_header h2::after {
   content: "";
   position: absolute;
   bottom: -2.375rem;
@@ -201,11 +180,7 @@ footer::after {
   background-color: #fff;
   border: 2px solid #333;
 }
-.services .section_header p,
-.portfolio .section_header p,
-.about .section_header p,
-.pricing .section_header p,
-.contact .section_header p {
+.services .section_header p, .portfolio .section_header p, .about .section_header p, .pricing .section_header p, .contact .section_header p {
   line-height: 2;
   margin: 0 auto 4.6875rem auto;
   color: #777;
@@ -242,7 +217,7 @@ header nav {
   align-items: center;
   justify-content: center;
   -moz-column-gap: 30px;
-  column-gap: 30px;
+       column-gap: 30px;
 }
 header .nav_items {
   display: none;
@@ -272,13 +247,12 @@ header .nav_items a {
     width: 100vw;
     border-radius: 5px;
     border-bottom: 2px solid #000;
-    background-color: #107590f0;
+    background-color: #107590;
   }
-  header .nav_items a:hover,
-  header .nav_items a.active {
+  header .nav_items a:hover, header .nav_items a.active {
     font-weight: bold;
     color: #19c8fa;
-    background-color: #000000d6;
+    background-color: #162d2d;
   }
 }
 @media (min-width: 768px) {
@@ -288,9 +262,7 @@ header .nav_items a {
     position: relative;
     z-index: 2;
   }
-  header .nav_items a:hover,
-  header .nav_items a.active {
-    font-weight: bold;
+  header .nav_items a:hover, header .nav_items a.active {
     color: #19c8fa;
     border-bottom: 1px solid #19c8fa;
   }
@@ -327,6 +299,7 @@ header .toggle_menu span {
   width: 100%;
   height: 3px;
   margin-bottom: 3px;
+  transition: 0.5s;
   background-color: #fff;
 }
 
@@ -360,7 +333,7 @@ footer p {
   text-transform: capitalize;
   margin-top: 10px;
 }
-footer p span {
+footer p span:last-of-type {
   font-weight: bold;
   color: #19c8fa;
 }
@@ -372,6 +345,9 @@ footer a {
 }
 footer a:hover {
   color: #0083fd;
+}
+footer p:last-of-type span:first-of-type {
+  color: red;
 }
 
 /* ---------------- End header Section ------------------*/
@@ -390,12 +366,12 @@ footer a:hover {
   transform: translateY(-50%);
   padding: 25px;
   color: #fff;
-  border-radius: 5px;
-  background-color: #107590f0;
+  background-color: #107590b0;
 }
 @media (min-width: 768px) {
   .slider .text {
     width: 50%;
+    border-radius: 0 5px 5px 0;
   }
 }
 @media (min-width: 1200px) {
@@ -478,7 +454,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 50px;
-    column-gap: 50px;
+         column-gap: 50px;
   }
 }
 .services .our_services .srv_box {
@@ -488,7 +464,7 @@ footer a:hover {
   .services .our_services .srv_box {
     display: flex;
     -moz-column-gap: 50px;
-    column-gap: 50px;
+         column-gap: 50px;
   }
 }
 .services .our_services i {
@@ -539,11 +515,12 @@ footer a:hover {
   width: 100%;
   color: #fff;
   padding: 3.125rem;
-  background-color: #107590f0;
+  background-color: #107590b0;
 }
 @media (min-width: 768px) {
   .design .text {
     width: unset;
+    border-radius: 5px 0 0 5px;
   }
 }
 .design .text h2 {
@@ -571,22 +548,23 @@ footer a:hover {
 }
 .portfolio ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .portfolio ul li {
   cursor: pointer;
   padding: 10px;
+  margin: 0 5px;
   border-radius: 5px;
   text-transform: capitalize;
   transition: 0.5s;
 }
-.portfolio ul li:hover,
-.portfolio ul li.active {
+.portfolio ul li:hover, .portfolio ul li.active {
   color: #fff;
   background-color: #19c8fa;
 }
 
-/* -------------- Start portfolio Section --------------*/
+/* -------------- End portfolio Section --------------*/
 /* --------------- Start Gellary Section ---------------*/
 @media (min-width: 768px) {
   .content {
@@ -658,6 +636,9 @@ footer a:hover {
   margin-top: 6.25rem;
   position: relative;
 }
+.video::after {
+  height: calc(100% - 5px);
+}
 .video .text {
   position: absolute;
   z-index: 2;
@@ -668,6 +649,16 @@ footer a:hover {
   transform: translateY(-50%);
   color: #fff;
   background-color: #107590ad;
+}
+@media (max-width: 480px) {
+  .video .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.25rem;
+  }
 }
 .video .text h2 {
   font-weight: normal;
@@ -754,7 +745,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 100px;
-    column-gap: 100px;
+         column-gap: 100px;
   }
 }
 .info .container .section_header h3 {
@@ -822,8 +813,7 @@ footer a:hover {
   border-radius: 50%;
   transition: 0.5s;
 }
-.info .container .testimonials ul li:hover,
-.info .container .testimonials ul li.active {
+.info .container .testimonials ul li:hover, .info .container .testimonials ul li.active {
   border-color: #19c8fa;
   background-color: #19c8fa;
 }
@@ -839,6 +829,8 @@ footer a:hover {
 .info .container .skills .prog-holder .prog {
   background-color: #ccc;
   height: 30px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .info .container .skills .prog-holder .prog span {
   display: block;
@@ -915,7 +907,7 @@ footer a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     -moz-column-gap: 30px;
-    column-gap: 30px;
+         column-gap: 30px;
   }
 }
 @media (min-width: 1200px) {
@@ -981,7 +973,6 @@ footer a:hover {
   border-radius: 5px;
 }
 .pricing .offers .offer a:hover {
-  font-weight: bold;
   color: white;
   background-color: #19c8fa;
 }
@@ -1007,7 +998,7 @@ footer a:hover {
   background-color: #0083fd;
 }
 
-/* ----------------- End Pricing Section ---------------*/ 
+/* ----------------- End Pricing Section ---------------*/
 /* --------------- Start Subscribe section -------------*/
 .subscribe {
   background-color: lightblue;
@@ -1031,7 +1022,7 @@ footer a:hover {
     flex-direction: row;
     align-items: start;
     -moz-column-gap: 50px;
-    column-gap: 50px;
+         column-gap: 50px;
   }
 }
 .subscribe form {
@@ -1053,7 +1044,7 @@ footer a:hover {
   transform: translateY(-50%);
   left: 10px;
 }
-.subscribe form input[type="email"] {
+.subscribe form input[type=email] {
   height: 100%;
   width: calc(100% - 105px);
   padding: 15px 15px 20px 40px;
@@ -1062,19 +1053,19 @@ footer a:hover {
   color: white;
   background-color: transparent;
 }
-.subscribe form input[type="email"]::-moz-placeholder {
+.subscribe form input[type=email]::-moz-placeholder {
   color: #ccc;
 }
-.subscribe form input[type="email"]:-ms-input-placeholder {
+.subscribe form input[type=email]:-ms-input-placeholder {
   color: #ccc;
 }
-.subscribe form input[type="email"]::placeholder {
+.subscribe form input[type=email]::placeholder {
   color: #ccc;
 }
-.subscribe form input[type="email"]:focus {
+.subscribe form input[type=email]:focus {
   outline: none;
 }
-.subscribe form input[type="submit"] {
+.subscribe form input[type=submit] {
   max-height: 100%;
   width: 100px;
   padding: 20px;
@@ -1084,7 +1075,7 @@ footer a:hover {
   color: white;
   background-color: #19c8fa;
 }
-.subscribe form input[type="submit"]:hover {
+.subscribe form input[type=submit]:hover {
   background-color: #0083fd;
 }
 .subscribe p {
